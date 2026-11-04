@@ -19,9 +19,9 @@ Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/
 ## GitHub, in numbers
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-dark.svg?v=a3dc86fdc0e4">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=2ae185ee1664">
-  <img alt="GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=2ae185ee1664" width="400">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-dark.svg?v=61ebc570c04a">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=80120f3753db">
+  <img alt="GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=80120f3753db" width="400">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-dark.svg?v=db1062dc404e">
