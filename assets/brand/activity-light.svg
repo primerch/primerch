@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="232" viewBox="0 0 900 232" role="img" aria-labelledby="title desc">
+<title id="title">GitHub contribution calendar</title><desc id="desc">9,854 contributions in the past year, including 9,795 anonymous private contributions. Bars group GitHub&#x27;s returned calendar by month; boundary months are partial.</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;font-variant-numeric:tabular-nums}.muted{fill:#50647d}</style>
+<rect width="900" height="232" rx="12" fill="#f5f8fc"/>
+<text x="32" y="36" fill="#102238" font-size="20" font-weight="500" text-anchor="start">A year of building</text>
+<text x="868" y="38" fill="#086b57" font-size="27" font-weight="500" text-anchor="end">9,854</text>
+<rect x="35.00" y="175.46" width="56.31" height="8.54" rx="2" fill="#50647d" opacity="0.52"/>
+<text x="64.15384615384616" y="212" fill="#50647d" font-size="14" font-weight="400" text-anchor="middle">25/11</text>
+<rect x="99.31" y="179.21" width="56.31" height="4.79" rx="2" fill="#50647d" opacity="0.52"/>
+<rect x="163.62" y="178.89" width="56.31" height="5.11" rx="2" fill="#50647d" opacity="0.52"/>
+<text x="192.76923076923077" y="212" fill="#50647d" font-size="14" font-weight="400" text-anchor="middle">26/01</text>
+<rect x="227.92" y="176.18" width="56.31" height="7.82" rx="2" fill="#50647d" opacity="0.52"/>
+<rect x="292.23" y="180.42" width="56.31" height="3.58" rx="2" fill="#50647d" opacity="0.52"/>
+<text x="321.38461538461536" y="212" fill="#50647d" font-size="14" font-weight="400" text-anchor="middle">26/03</text>
+<rect x="356.54" y="181.68" width="56.31" height="2.32" rx="2" fill="#50647d" opacity="0.52"/>
+<rect x="420.85" y="161.57" width="56.31" height="22.43" rx="2" fill="#50647d" opacity="0.52"/>
+<text x="449.99999999999994" y="212" fill="#50647d" font-size="14" font-weight="400" text-anchor="middle">26/05</text>
+<rect x="485.15" y="168.63" width="56.31" height="15.37" rx="2" fill="#50647d" opacity="0.52"/>
+<rect x="549.46" y="174.76" width="56.31" height="9.24" rx="2" fill="#50647d" opacity="0.52"/>
+<text x="578.6153846153846" y="212" fill="#50647d" font-size="14" font-weight="400" text-anchor="middle">26/07</text>
+<rect x="613.77" y="160.50" width="56.31" height="23.50" rx="2" fill="#50647d" opacity="0.52"/>
+<rect x="678.08" y="153.94" width="56.31" height="30.06" rx="2" fill="#50647d" opacity="0.52"/>
+<text x="707.2307692307693" y="212" fill="#50647d" font-size="14" font-weight="400" text-anchor="middle">26/09</text>
+<rect x="742.38" y="82.00" width="56.31" height="102.00" rx="2" fill="#086b57" opacity="1"/>
+<rect x="806.69" y="180.30" width="56.31" height="3.70" rx="2" fill="#50647d" opacity="0.52"/>
+<text x="835.8461538461538" y="212" fill="#50647d" font-size="14" font-weight="400" text-anchor="middle">26/11</text>
+<path d="M32 185 H868" stroke="#d5dfeb"/></svg>

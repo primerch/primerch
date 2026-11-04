@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="165" viewBox="0 0 340 165" fill="none" role="img" aria-labelledby="descId">
+        <title id="titleId">Lifetime impact, Rank: C</title>
+        <desc id="descId">Total Contributions: 13124, Public PRs: 10, Public merged PRs: 3</desc>
+        <style>
+          .header {
+            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+            fill: #79ffe1;
+            animation: fadeInAnimation 0.8s ease-in-out forwards;
+          }
+          @supports(-moz-appearance: auto) {
+            /* Selector detects Firefox */
+            .header { font-size: 15.5px; }
+          }
+          
+    .stat {
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #edf4fc;
+    }
+    @supports(-moz-appearance: auto) {
+      /* Selector detects Firefox */
+      .stat { font-size:12px; }
+    }
+    .stagger {
+      opacity: 0;
+      animation: fadeInAnimation 0.3s ease-in-out forwards;
+    }
+    .rank-text {
+      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #edf4fc;
+      animation: scaleInAnimation 0.3s ease-in-out forwards;
+    }
+    .rank-percentile-header {
+      font-size: 14px;
+    }
+    .rank-percentile-text {
+      font-size: 16px;
+    }
+    
+    .not_bold { font-weight: 400 }
+    .bold { font-weight: 700 }
+    .icon {
+      fill: #79ffe1;
+      display: block;
+    }
+
+    .rank-circle-rim {
+      stroke: #79ffe1;
+      fill: none;
+      stroke-width: 6;
+      opacity: 0.2;
+    }
+    .rank-circle {
+      stroke: #79ffe1;
+      stroke-dasharray: 250;
+      fill: none;
+      stroke-width: 6;
+      stroke-linecap: round;
+      opacity: 0.8;
+      transform-origin: -10px 8px;
+      transform: rotate(-90deg);
+      animation: rankAnimation 1s forwards ease-in-out;
+    }
+    
+    @keyframes rankAnimation {
+      from {
+        stroke-dashoffset: 251.32741228718345;
+      }
+      to {
+        stroke-dashoffset: 234.3541751186149;
+      }
+    }
+  
+  
+          
+
+          
+      /* Animations */
+      @keyframes scaleInAnimation {
+        from {
+          transform: translate(-5px, 5px) scale(0);
+        }
+        to {
+          transform: translate(-5px, 5px) scale(1);
+        }
+      }
+      @keyframes fadeInAnimation {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    
+          * { animation-duration: 0s !important; animation-delay: 0s !important; }
+        </style>
+
+        
+        <defs>
+          
+          
+        </defs>
+        
+
+        <rect data-testid="card-bg" class="card-bg" x="0.5" y="0.5" rx="12" height="99%" stroke="#26364c" width="339" fill="#080e18" stroke-opacity="1" />
+
+        
+      <g data-testid="card-title" transform="translate(25, 35)">
+        <g transform="translate(0, 0)">
+      <text x="0" y="0" class="header" data-testid="header">Lifetime impact</text>
+    </g>
+      </g>
+    
+
+        <g data-testid="main-card-body" transform="translate(0, 55)">
+          
+    
+    <svg x="0" y="0">
+      <g transform="translate(0, 0)">
+    <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
+      
+    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+      <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7.25-3.25v2.5h2.5a.75.75 0 0 1 0 1.5h-2.5v2.5a.75.75 0 0 1-1.5 0v-2.5h-2.5a.75.75 0 0 1 0-1.5h2.5v-2.5a.75.75 0 0 1 1.5 0Z" />
+    </svg>
+  
+      <text class="stat  bold" x="25" y="12.5">Total Contributions:</text>
+      <text class="stat  bold" x="224.01" y="12.5" data-testid="contributions">13124</text>
+    </g>
+  </g><g transform="translate(0, 30)">
+    <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
+      
+    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+      <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" />
+    </svg>
+  
+      <text class="stat  bold" x="25" y="12.5">Public PRs:</text>
+      <text class="stat  bold" x="224.01" y="12.5" data-testid="prs">10</text>
+    </g>
+  </g><g transform="translate(0, 60)">
+    <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
+      
+    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+      <path fill-rule="evenodd" d="M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.734 5.734 0 0 1 5 7.123v3.505a2.25 2.25 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.95-.218ZM4.25 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm8.5-4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM5 3.25a.75.75 0 1 0 0 .005V3.25Z" />
+    </svg>
+  
+      <text class="stat  bold" x="25" y="12.5">Public merged PRs:</text>
+      <text class="stat  bold" x="224.01" y="12.5" data-testid="prs_merged">3</text>
+    </g>
+  </g>
+    </svg>
+  
+        </g>
+      </svg>

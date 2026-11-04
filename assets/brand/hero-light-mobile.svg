@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="312" viewBox="0 0 440 312" role="img" aria-labelledby="title desc">
+<title id="title">Reacher</title><desc id="desc">Reacher. Build products. Give fixes back. 3 verified public upstream merges.</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;font-variant-numeric:tabular-nums}.muted{fill:#50647d}</style>
+<rect width="440" height="312" rx="12" fill="#f5f8fc"/>
+<path d="M66 0V700H370Q436 700 485.0 677.0Q534 654 561.0 612.0Q588 570 588 513V501Q588 438 558.0 399.0Q528 360 484 342V324Q524 322 546.0 296.5Q568 271 568 229V0H436V210Q436 234 423.5 249.0Q411 264 382 264H198V0ZM198 384H356Q403 384 429.5 409.5Q456 435 456 477V487Q456 529 430.0 554.5Q404 580 356 580H198ZM678 0V700H1128V580H810V413H1100V293H810V120H1134V0ZM1164 0 1348 700H1578L1762 0H1626L1588 154H1338L1300 0ZM1369 276H1557L1472 617H1454ZM2092 -14Q1962 -14 1886.0 58.5Q1810 131 1810 266V434Q1810 569 1886.0 641.5Q1962 714 2092 714Q2221 714 2291.5 643.5Q2362 573 2362 450V444H2232V454Q2232 516 2197.5 556.0Q2163 596 2092 596Q2022 596 1982.0 553.0Q1942 510 1942 436V264Q1942 191 1982.0 147.5Q2022 104 2092 104Q2163 104 2197.5 144.5Q2232 185 2232 246V264H2362V250Q2362 127 2291.5 56.5Q2221 -14 2092 -14ZM2450 0V700H2582V411H2842V700H2974V0H2842V291H2582V0ZM3086 0V700H3536V580H3218V413H3508V293H3218V120H3542V0ZM3620 0V700H3924Q3990 700 4039.0 677.0Q4088 654 4115.0 612.0Q4142 570 4142 513V501Q4142 438 4112.0 399.0Q4082 360 4038 342V324Q4078 322 4100.0 296.5Q4122 271 4122 229V0H3990V210Q3990 234 3977.5 249.0Q3965 264 3936 264H3752V0ZM3752 384H3910Q3957 384 3983.5 409.5Q4010 435 4010 477V487Q4010 529 3984.0 554.5Q3958 580 3910 580H3752Z" transform="translate(32 98) scale(0.090254 -0.090254)" fill="#102238"/>
+<text x="32" y="151" fill="#102238" font-size="27" font-weight="500" text-anchor="start">Build products.</text>
+<text x="32" y="185" fill="#086b57" font-size="27" font-weight="500" text-anchor="start">Give fixes back.</text>
+<path d="M32 231 H60" stroke="#d5dfeb" fill="none" stroke-width="2"/>
+<circle cx="60" cy="231" r="7" fill="#f5f8fc" stroke="#086b57" stroke-width="2"/>
+<text x="60" y="263" fill="#50647d" font-size="17" font-weight="400" text-anchor="middle">rag</text>
+<text x="60" y="287" fill="#086b57" font-size="18" font-weight="500" text-anchor="middle">#120</text>
+<path d="M32 231 H218" stroke="#d5dfeb" fill="none" stroke-width="2"/>
+<circle cx="218" cy="231" r="7" fill="#f5f8fc" stroke="#086b57" stroke-width="2"/>
+<text x="218" y="263" fill="#50647d" font-size="17" font-weight="400" text-anchor="middle">ooxml</text>
+<text x="218" y="287" fill="#086b57" font-size="18" font-weight="500" text-anchor="middle">#241</text>
+<path d="M32 231 H376" stroke="#d5dfeb" fill="none" stroke-width="2"/>
+<circle cx="376" cy="231" r="7" fill="#f5f8fc" stroke="#086b57" stroke-width="2"/>
+<text x="376" y="263" fill="#50647d" font-size="17" font-weight="400" text-anchor="middle">pptx-viewer</text>
+<text x="376" y="287" fill="#086b57" font-size="18" font-weight="500" text-anchor="middle">#185</text></svg>

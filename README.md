@@ -1,14 +1,55 @@
-# Reacher
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark-mobile.svg">
+  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-light.svg">
+  <img alt="Reacher. Build products. Give fixes back. Selected verified upstream merges." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-light.svg" width="100%">
+</picture>
 
-I build apps people crave, and contribute fixes back upstream.
+**13,124 lifetime contributions.** Public work and anonymous private activity, counted together.
 
-## Open-source contributions
+[Merged upstream (3)](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Amerged%20sort%3Aupdated-desc) · [Open PRs (4)](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Aopen%20sort%3Aupdated-desc) · [Full contribution history](https://github.com/primerch/primerch/blob/main/HISTORY.md)
+
+## Built by me
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-dark-mobile.svg">
+  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-light.svg">
+  <img alt="SupaSchool: a teaching and learning platform. Imminfo: an immigration information website. Blink Approval: a homework review interface." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-light.svg" width="100%">
+</picture>
+
+Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/primerch/gesp-exam-assessment) · [Purrge Website](https://github.com/primerch/purrge-website).
+
+## GitHub, in numbers
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg">
+  <img alt="GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg" width="400">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-light.svg">
+  <img alt="GitHub Stats Extended: language distribution by public source-code bytes; private code excluded" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-light.svg" width="400">
+</picture>
+
+Lifetime contributions include anonymous private activity. The language chart covers public source code.
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg">
+  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-light.svg">
+  <img alt="9,854 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-light.svg" width="100%">
+</picture>
+
+**9,854 contributions in the past year**, including **9,795 anonymous private contributions**. Private repository names, commits, and source code stay private.
+
+## Accepted upstream
 
 **3 pull requests merged across 3 projects** · 4 open
-
-[Merged PRs](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Amerged%20sort%3Aupdated-desc) · [Open PRs](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Aopen%20sort%3Aupdated-desc) · [Full history](https://github.com/primerch/primerch/blob/main/HISTORY.md)
-
-### Merged contributions
 
 | Project / PR | Contribution | Merged |
 | --- | --- | --- |
@@ -18,64 +59,8 @@ I build apps people crave, and contribute fixes back upstream.
 
 Merged code changes: **+4,907 / −491 lines**
 
-## What I build
-
-| Project | Focus |
-| --- | --- |
-| **SupaSchool** | A teaching and learning platform |
-| **Imminfo** | An immigration information website |
-| **Blink Approval** | A homework review interface |
-
-These projects have private source repositories. Also on GitHub: [GESP Exam Assessment](https://github.com/primerch/gesp-exam-assessment) · [Purrge Website](https://github.com/primerch/purrge-website).
-
-## Contribution analytics
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/0-profile-details.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/0-profile-details.svg">
-  <img alt="GitHub contribution trend over the past year, with account activity totals" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/0-profile-details.svg" width="100%">
-</picture>
-
-The headline shows lifetime contributions; the trend shows the past year. Public original repositories exclude forks. [Open full-size activity chart](https://raw.githubusercontent.com/primerch/primerch/main/assets/github/0-profile-details.svg).
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/1-repos-per-language.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/1-repos-per-language.svg">
-  <img alt="Language distribution across public source repositories" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/1-repos-per-language.svg" width="340">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/4-productive-time.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/4-productive-time.svg">
-  <img alt="Public commit activity by hour in Asia/Shanghai" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/4-productive-time.svg" width="340">
-</picture>
-
-Language and hourly charts cover public code only.
-
 <details>
-<summary>More charts and what these numbers mean</summary>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/3-stats.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/3-stats.svg">
-  <img alt="Public GitHub stars, commits, pull requests, issues, and repositories contributed to" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/3-stats.svg" width="340">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/2-most-commit-language.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/2-most-commit-language.svg">
-  <img alt="Languages associated with public commit activity" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/2-most-commit-language.svg" width="340">
-</picture>
-
-- **Contributions** count qualifying GitHub activity, including commits, issues, PRs, reviews, and repository creation. The trend covers the past year and includes the anonymized private activity shared on my profile. It does not count lines of code.
-- **Merged PRs** show changes accepted by upstream projects. This homepage counts public external PRs separately from work in my own repositories.
-- **Language charts** describe public repository code or commit activity, not proficiency. Private code is outside this integration's access, and this profile automation repository is excluded.
-- **Activity by hour** shows when public commits were made in Asia/Shanghai. It does not measure hours worked.
-- **Projects** above are a portfolio. GitHub's separate Projects tab contains planning boards.
-
-Charts are generated by [GitHub Profile Summary Cards](https://github.com/vn7n24fzkq/github-profile-summary-cards) and stored in this repository. If the chart service is unavailable, the last saved charts stay visible and PR history continues to refresh independently. [How GitHub counts contributions](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference).
-
-</details>
-
-### Open pull requests
+<summary>4 open upstream pull requests</summary>
 
 | Project / PR | Contribution |
 | --- | --- |
@@ -84,8 +69,24 @@ Charts are generated by [GitHub Profile Summary Cards](https://github.com/vn7n24
 | [convex-backend #631](https://github.com/convex/convex-backend/pull/631) | Fix auth configuration races during token retrieval |
 | [monaco-vim #176](https://github.com/brijeshb42/monaco-vim/pull/176) | Handle Vim keys before native editor shortcuts |
 
+</details>
+
 <details>
-<summary>All-time totals and closed PRs</summary>
+<summary>How the numbers work</summary>
+
+- **Lifetime contributions** count qualifying GitHub activity across all contribution years, including the anonymized private activity shared on my profile.
+- **Past-year activity** covers GitHub's trailing-year contribution calendar. Boundary months in the monthly chart are partial.
+- **Anonymous private contributions** are aggregate activity counts. No private repository names, commit messages, paths, or code are published.
+- **Public PRs** and **Public merged PRs** on the Stats Extended card cover public repositories. The upstream section below the charts specifically excludes my own repositories.
+- **Public language mix** counts public code bytes, excluding forks and this profile automation repository. It does not measure proficiency or expose private code.
+- **Merged code changes** sum accepted upstream PR diffs, including tests. They are not a deduplicated count of authored lines.
+
+Statistics are generated by [GitHub Stats Extended](https://github.com/stats-organization/github-stats-extended) with its [official Action](https://github.com/stats-organization/github-readme-stats-action). Saved charts stay visible between updates. [GitHub's contribution rules](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference).
+
+</details>
+
+<details>
+<summary>Full public upstream totals and closed PRs</summary>
 
 10 PRs submitted to 8 public upstream repositories: 3 merged, 4 open, 3 closed without merging.
 
@@ -95,8 +96,8 @@ Charts are generated by [GitHub Profile Summary Cards](https://github.com/vn7n24
 | [pptx-viewer #184](https://github.com/ChristopherVR/pptx-viewer/pull/184) | fix(animation): preserve authored PowerPoint playback and rendering |
 | [intro-to-github #4126](https://github.com/hyperskill/intro-to-github/pull/4126) | Update README.md |
 
-Only public upstream repositories are counted. My own repositories and private work are excluded. Line counts sum merged PR diffs, including tests; they are not a count of unique lines. Closed PRs are not counted as merged.
+These PR totals count public upstream repositories. My own repositories and private PRs are excluded here; anonymous private activity is included in the contribution totals above. Closed PRs are not counted as merged.
 
 </details>
 
-<sub>Latest PR activity: 2026-11-04 11:26 UTC+8 · [Sync log](https://github.com/primerch/primerch/actions/workflows/update-profile.yml) · Refreshed hourly; GitHub scheduling may be delayed</sub>
+<sub>Data refreshed 2026-11-04 · Latest PR activity: 2026-11-04 12:07 UTC+8 · [Hourly sync](https://github.com/primerch/primerch/actions/workflows/update-profile.yml)</sub>
