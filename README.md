@@ -7,7 +7,7 @@
   <img alt="Reacher. Build products. Give fixes back. Selected verified upstream merges." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-light.svg#gh-light-mode-only" width="100%">
 </picture>
 
-**13,124 lifetime contributions.** Public work and anonymous private activity, counted together.
+**13,125 lifetime contributions.** Public work and anonymous private activity, counted together.
 
 [Merged upstream (3)](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Amerged%20sort%3Aupdated-desc) · [Open PRs (4)](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Aopen%20sort%3Aupdated-desc) · [Full contribution history](https://github.com/primerch/primerch/blob/main/HISTORY.md)
 
@@ -41,14 +41,14 @@ Lifetime contributions include anonymous private activity. The language chart co
 
 <picture>
   <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg">
-  <img alt="9,854 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg#gh-dark-mode-only" width="100%">
+  <img alt="9,855 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg#gh-dark-mode-only" width="100%">
 </picture>
 <picture>
   <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-light-mobile.svg">
-  <img alt="9,854 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-light.svg#gh-light-mode-only" width="100%">
+  <img alt="9,855 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-light.svg#gh-light-mode-only" width="100%">
 </picture>
 
-**9,854 contributions in the past year**, including **9,795 anonymous private contributions**. Private repository names, commits, and source code stay private.
+**9,855 contributions in the past year**, including **9,795 anonymous private contributions**. Private repository names, commits, and source code stay private.
 
 ## Accepted upstream
 
