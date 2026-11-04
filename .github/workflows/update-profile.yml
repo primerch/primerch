@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update:
+  contributions:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -28,43 +28,33 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/update_profile.py
-      - name: Generate light charts
-        uses: vn7n24fzkq/github-profile-summary-cards@a83c680336e7701aa6bb43c3928b4d3e21169e96
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          USERNAME: primerch
-          TIME_ZONE: Asia/Shanghai
-          THEME: github
-          ANIMATION: none
-          AUTO_PUSH: false
-          NAME: Reacher
-      - name: Preserve light charts
-        run: |
-          mkdir -p assets/github
-          cp profile-summary-card-output/github/*.svg assets/github/
-      - name: Generate dark charts
-        uses: vn7n24fzkq/github-profile-summary-cards@a83c680336e7701aa6bb43c3928b4d3e21169e96
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          USERNAME: primerch
-          TIME_ZONE: Asia/Shanghai
-          THEME: github_dark
-          ANIMATION: none
-          AUTO_PUSH: false
-          NAME: Reacher
-      - name: Preserve dark charts and verify every image
-        run: |
-          mkdir -p assets/github_dark
-          cp profile-summary-card-output/github_dark/*.svg assets/github_dark/
-          python3 scripts/verify_cards.py
       - name: Commit contribution changes
         run: |
-          git add README.md HISTORY.md data/contributions.json assets/
+          git add README.md HISTORY.md data/contributions.json
           if ! git diff --cached --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git commit -m 'docs: refresh public contribution profile'
+            git push
+          fi
+  analytics:
+    needs: contributions
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - name: Refresh public analytics charts
+        run: python3 scripts/update_charts.py
+      - name: Verify every chart
+        run: python3 scripts/verify_cards.py
+      - name: Commit refreshed charts
+        run: |
+          git add assets/
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'docs: refresh contribution analytics charts'
             git push
           fi
