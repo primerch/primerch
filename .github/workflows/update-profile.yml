@@ -1,4 +1,4 @@
-name: Update contribution profile
+name: Update Stats Extended profile
 
 on:
   schedule:
@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - scripts/**
+      - assets/brand/wordmarks.json
       - .github/workflows/update-profile.yml
 
 permissions:
@@ -19,42 +20,86 @@ concurrency:
 jobs:
   contributions:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Verify public-only output and PR status handling
-        run: python3 -m unittest discover -s scripts -p 'test_*.py'
-      - name: Refresh public contributions
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/update_profile.py
-      - name: Commit contribution changes
-        run: |
-          git add README.md HISTORY.md data/contributions.json
-          if ! git diff --cached --quiet; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'docs: refresh public contribution profile'
-            git push
-          fi
-  analytics:
-    needs: contributions
-    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: main
-      - name: Refresh public analytics charts
-        run: python3 scripts/update_charts.py
-      - name: Verify every chart
-        run: python3 scripts/verify_cards.py
-      - name: Commit refreshed charts
+      - name: Verify privacy, history, and presentation edge cases
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Refresh public upstream history
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_profile.py
+      - name: Commit updated history
         run: |
-          git add assets/
+          git add README.md HISTORY.md data/contributions.json assets/brand/
           if ! git diff --cached --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'docs: refresh contribution analytics charts'
+            git commit -m 'docs: refresh upstream contribution history'
+            git push
+          fi
+  analytics:
+    needs: contributions
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - name: Collect anonymous public-profile activity
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/anonymous_activity.py
+      - name: Generate dark lifetime impact card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: stats
+          core_version: 2.2.1
+          token: ${{ github.token }}
+          fail_on_error: true
+          options: username=primerch&show=contributions,prs_merged&hide=stars,commits,issues,contribs&hide_rank=true&show_icons=true&disable_animations=true&number_format=long&custom_title=Lifetime%20impact&card_width=340&line_height=30&border_radius=12&bg_color=080e18&border_color=26364c&title_color=79ffe1&icon_color=79ffe1&text_color=edf4fc
+          path: assets/extended/stats-dark.svg
+      - name: Generate light lifetime impact card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: stats
+          core_version: 2.2.1
+          token: ${{ github.token }}
+          fail_on_error: true
+          options: username=primerch&show=contributions,prs_merged&hide=stars,commits,issues,contribs&hide_rank=true&show_icons=true&disable_animations=true&number_format=long&custom_title=Lifetime%20impact&card_width=340&line_height=30&border_radius=12&bg_color=f5f8fc&border_color=d5dfeb&title_color=086b57&icon_color=086b57&text_color=102238
+          path: assets/extended/stats-light.svg
+      - name: Generate dark public language chart
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: top-langs
+          core_version: 2.2.1
+          token: ${{ github.token }}
+          fail_on_error: true
+          options: username=primerch&exclude_repo=primerch&layout=compact&langs_count=6&disable_animations=true&custom_title=Public%20language%20mix&card_width=340&border_radius=12&bg_color=080e18&border_color=26364c&title_color=79ffe1&text_color=edf4fc
+          path: assets/extended/languages-dark.svg
+      - name: Generate light public language chart
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: top-langs
+          core_version: 2.2.1
+          token: ${{ github.token }}
+          fail_on_error: true
+          options: username=primerch&exclude_repo=primerch&layout=compact&langs_count=6&disable_animations=true&custom_title=Public%20language%20mix&card_width=340&border_radius=12&bg_color=f5f8fc&border_color=d5dfeb&title_color=086b57&text_color=102238
+          path: assets/extended/languages-light.svg
+      - name: Clarify card scopes and render the profile
+        run: |
+          python3 scripts/prepare_extended.py
+          python3 scripts/update_profile.py --render-only
+          python3 scripts/verify_cards.py
+      - name: Publish complete assets and retire the old integration
+        run: |
+          git rm -r --ignore-unmatch assets/github assets/github_dark
+          git add README.md data/activity.json assets/brand/ assets/extended/
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'docs: publish Stats Extended profile with anonymous private activity'
             git push
           fi

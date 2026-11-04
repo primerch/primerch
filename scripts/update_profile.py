@@ -2,6 +2,7 @@
 
 import json
 import os
+import sys
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
@@ -103,16 +104,19 @@ def rows(prs, merged=False, limit=10, full_names=False):
     return headers + "\n".join(output) + "\n"
 
 
-def chart(file, alt, width="100%"):
+def artwork(name, alt, width="100%", category='brand', responsive=True):
     base = f"https://raw.githubusercontent.com/{LOGIN}/{LOGIN}/main/assets"
+    mobile = f'''  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="{base}/{category}/{name}-dark-mobile.svg">
+  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="{base}/{category}/{name}-light-mobile.svg">
+''' if responsive else ''
     return f'''<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="{base}/github_dark/{file}">
-  <source media="(prefers-color-scheme: light)" srcset="{base}/github/{file}">
-  <img alt="{alt}" src="{base}/github/{file}" width="{width}">
+{mobile}  <source media="(prefers-color-scheme: dark)" srcset="{base}/{category}/{name}-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="{base}/{category}/{name}-light.svg">
+  <img alt="{alt}" src="{base}/{category}/{name}-light.svg" width="{width}">
 </picture>'''
 
 
-def render(prs):
+def render(prs, activity=None):
     prs = public_external(prs)
     merged = sorted((pr for pr in prs if pr["state"] == "MERGED"), key=lambda pr: pr["mergedAt"], reverse=True)
     opened = sorted((pr for pr in prs if pr["state"] == "OPEN"), key=lambda pr: pr["updatedAt"], reverse=True)
@@ -121,73 +125,71 @@ def render(prs):
     additions = sum(pr["additions"] for pr in merged)
     deletions = sum(pr["deletions"] for pr in merged)
     latest = max((pr["updatedAt"] for pr in prs), default=None)
-    activity = f"Latest PR activity: {date(latest):%Y-%m-%d %H:%M} UTC+8" if latest else "No public upstream PRs yet"
-    return f"""# Reacher
+    latest_pr = f"Latest PR activity: {date(latest):%Y-%m-%d %H:%M} UTC+8" if latest else "No public upstream PRs yet"
+    activity = activity or {'lifetimeContributions': 0, 'lastYearContributions': 0, 'anonymousPrivateLastYear': 0, 'asOf': 'not yet refreshed'}
+    pr_word = 'pull request' if len(merged) == 1 else 'pull requests'
+    project_word = 'project' if merged_projects == 1 else 'projects'
+    return f"""{artwork('hero', 'Reacher. Build products. Give fixes back. Selected verified upstream merges.')}
 
-I build apps people crave, and contribute fixes back upstream.
+**{activity['lifetimeContributions']:,} lifetime contributions.** Public work and anonymous private activity, counted together.
 
-## Open-source contributions
+[Merged upstream ({len(merged)})]({search('is:merged sort:updated-desc')}) · [Open PRs ({len(opened)})]({search('is:open sort:updated-desc')}) · [Full contribution history](https://github.com/{LOGIN}/{LOGIN}/blob/main/HISTORY.md)
 
-**{len(merged)} pull requests merged across {merged_projects} projects** · {len(opened)} open
+## Built by me
 
-[Merged PRs]({search('is:merged sort:updated-desc')}) · [Open PRs]({search('is:open sort:updated-desc')}) · [Full history](https://github.com/{LOGIN}/{LOGIN}/blob/main/HISTORY.md)
+{artwork('products', 'SupaSchool: a teaching and learning platform. Imminfo: an immigration information website. Blink Approval: a homework review interface.')}
 
-### Merged contributions
+Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/{LOGIN}/gesp-exam-assessment) · [Purrge Website](https://github.com/{LOGIN}/purrge-website).
+
+## GitHub, in numbers
+
+{artwork('stats', 'GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs', '400', 'extended', False)}
+{artwork('languages', 'GitHub Stats Extended: language distribution by public source-code bytes; private code excluded', '400', 'extended', False)}
+
+Lifetime contributions include anonymous private activity. The language chart covers public source code.
+
+{artwork('activity', f"{activity['lastYearContributions']:,} contributions over the past year, including {activity['anonymousPrivateLastYear']:,} anonymous private contributions")}
+
+**{activity['lastYearContributions']:,} contributions in the past year**, including **{activity['anonymousPrivateLastYear']:,} anonymous private contributions**. Private repository names, commits, and source code stay private.
+
+## Accepted upstream
+
+**{len(merged)} {pr_word} merged across {merged_projects} {project_word}** · {len(opened)} open
 
 {rows(merged, merged=True)}
 Merged code changes: **+{additions:,} / −{deletions:,} lines**
 
-## What I build
+<details>
+<summary>{len(opened)} open upstream pull requests</summary>
 
-| Project | Focus |
-| --- | --- |
-| **SupaSchool** | A teaching and learning platform |
-| **Imminfo** | An immigration information website |
-| **Blink Approval** | A homework review interface |
-
-These projects have private source repositories. Also on GitHub: [GESP Exam Assessment](https://github.com/{LOGIN}/gesp-exam-assessment) · [Purrge Website](https://github.com/{LOGIN}/purrge-website).
-
-## Contribution analytics
-
-{chart('0-profile-details.svg', 'GitHub contribution trend over the past year, with account activity totals')}
-
-The headline shows lifetime contributions; the trend shows the past year. Public original repositories exclude forks. [Open full-size activity chart](https://raw.githubusercontent.com/{LOGIN}/{LOGIN}/main/assets/github/0-profile-details.svg).
-
-{chart('1-repos-per-language.svg', 'Language distribution across public source repositories', '340')}
-{chart('4-productive-time.svg', 'Public commit activity by hour in Asia/Shanghai', '340')}
-
-Language and hourly charts cover public code only.
+{rows(opened)}
+</details>
 
 <details>
-<summary>More charts and what these numbers mean</summary>
+<summary>How the numbers work</summary>
 
-{chart('3-stats.svg', 'Public GitHub stars, commits, pull requests, issues, and repositories contributed to', '340')}
-{chart('2-most-commit-language.svg', 'Languages associated with public commit activity', '340')}
+- **Lifetime contributions** count qualifying GitHub activity across all contribution years, including the anonymized private activity shared on my profile.
+- **Past-year activity** covers GitHub's trailing-year contribution calendar. Boundary months in the monthly chart are partial.
+- **Anonymous private contributions** are aggregate activity counts. No private repository names, commit messages, paths, or code are published.
+- **Public PRs** and **Public merged PRs** on the Stats Extended card cover public repositories. The upstream section below the charts specifically excludes my own repositories.
+- **Public language mix** counts public code bytes, excluding forks and this profile automation repository. It does not measure proficiency or expose private code.
+- **Merged code changes** sum accepted upstream PR diffs, including tests. They are not a deduplicated count of authored lines.
 
-- **Contributions** count qualifying GitHub activity, including commits, issues, PRs, reviews, and repository creation. The trend covers the past year and includes the anonymized private activity shared on my profile. It does not count lines of code.
-- **Merged PRs** show changes accepted by upstream projects. This homepage counts public external PRs separately from work in my own repositories.
-- **Language charts** describe public repository code or commit activity, not proficiency. Private code is outside this integration's access, and this profile automation repository is excluded.
-- **Activity by hour** shows when public commits were made in Asia/Shanghai. It does not measure hours worked.
-- **Projects** above are a portfolio. GitHub's separate Projects tab contains planning boards.
-
-Charts are generated by [GitHub Profile Summary Cards](https://github.com/vn7n24fzkq/github-profile-summary-cards) and stored in this repository. If the chart service is unavailable, the last saved charts stay visible and PR history continues to refresh independently. [How GitHub counts contributions](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference).
+Statistics are generated by [GitHub Stats Extended](https://github.com/stats-organization/github-stats-extended) with its [official Action](https://github.com/stats-organization/github-readme-stats-action). Saved charts stay visible between updates. [GitHub's contribution rules](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference).
 
 </details>
 
-### Open pull requests
-
-{rows(opened)}
 <details>
-<summary>All-time totals and closed PRs</summary>
+<summary>Full public upstream totals and closed PRs</summary>
 
 {len(prs)} PRs submitted to {len({pr['repository']['nameWithOwner'] for pr in prs})} public upstream repositories: {len(merged)} merged, {len(opened)} open, {len(closed)} closed without merging.
 
 {rows(closed)}
-Only public upstream repositories are counted. My own repositories and private work are excluded. Line counts sum merged PR diffs, including tests; they are not a count of unique lines. Closed PRs are not counted as merged.
+These PR totals count public upstream repositories. My own repositories and private PRs are excluded here; anonymous private activity is included in the contribution totals above. Closed PRs are not counted as merged.
 
 </details>
 
-<sub>{activity} · [Sync log](https://github.com/{LOGIN}/{LOGIN}/actions/workflows/update-profile.yml) · Refreshed hourly; GitHub scheduling may be delayed</sub>
+<sub>Data refreshed {activity['asOf']} · {latest_pr} · [Hourly sync](https://github.com/{LOGIN}/{LOGIN}/actions/workflows/update-profile.yml)</sub>
 """
 
 
@@ -216,18 +218,28 @@ Public upstream repositories only. The homepage shows the latest ten entries per
 
 
 def main():
+    if '--render-only' in sys.argv:
+        prs = json.loads((ROOT / 'data/contributions.json').read_text())
+        activity = json.loads((ROOT / 'data/activity.json').read_text())
+        from visuals import build_visuals
+        build_visuals(prs, activity)
+        (ROOT / 'README.md').write_text(render(prs, activity))
+        return
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if not token:
         raise SystemExit("GH_TOKEN or GITHUB_TOKEN is required")
     prs = fetch_pull_requests(token)
     # Both files are prepared only after every API page has succeeded.
-    readme = render(prs)
     history = render_history(prs)
     data = json.dumps(prs, ensure_ascii=False, indent=2) + "\n"
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data/contributions.json").write_text(data)
-    (ROOT / "README.md").write_text(readme)
     (ROOT / "HISTORY.md").write_text(history)
+    if (ROOT / 'data/activity.json').exists() and (ROOT / 'assets/extended/stats-dark.svg').exists():
+        from visuals import build_visuals
+        activity = json.loads((ROOT / 'data/activity.json').read_text())
+        build_visuals(prs, activity)
+        (ROOT / 'README.md').write_text(render(prs, activity))
     print(f"Profile generated from {len(prs)} public external pull requests")
 
 

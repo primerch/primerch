@@ -24,11 +24,11 @@ class ProfileTests(unittest.TestCase):
         output = render(values)
         self.assertNotIn("secret", output)
         self.assertNotIn("PRIMERCH", output)
-        self.assertIn("1 pull requests merged across 1 projects", output)
+        self.assertIn("1 pull request merged across 1 project", output)
 
     def test_closed_is_not_counted_as_merged(self):
         output = render([pr(), pr("CLOSED"), pr("OPEN")])
-        self.assertIn("1 pull requests merged across 1 projects", output)
+        self.assertIn("1 pull request merged across 1 project", output)
         self.assertIn("1 open", output)
         self.assertIn("+10 / −2 lines", output)
         self.assertIn("2026-11-04", output)  # Shanghai date crosses midnight.
