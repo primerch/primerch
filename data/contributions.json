@@ -1,5 +1,23 @@
 [
   {
+    "number": 469,
+    "title": "fix(adapter): paginate unique session tokens in creation order",
+    "url": "https://github.com/convex/better-auth/pull/469",
+    "state": "OPEN",
+    "mergedAt": null,
+    "createdAt": "2026-11-04T05:46:37Z",
+    "updatedAt": "2026-11-04T05:51:10Z",
+    "additions": 173,
+    "deletions": 6,
+    "repository": {
+      "nameWithOwner": "convex/better-auth",
+      "isPrivate": false,
+      "owner": {
+        "login": "convex"
+      }
+    }
+  },
+  {
     "number": 883,
     "title": "fix: route ES module consumers to the ESM build",
     "url": "https://github.com/opentypejs/opentype.js/pull/883",
@@ -24,8 +42,8 @@
     "state": "OPEN",
     "mergedAt": null,
     "createdAt": "2026-11-03T08:58:13Z",
-    "updatedAt": "2026-11-04T04:32:46Z",
-    "additions": 2478,
+    "updatedAt": "2026-11-04T05:13:35Z",
+    "additions": 2484,
     "deletions": 145,
     "repository": {
       "nameWithOwner": "convex/better-auth",
