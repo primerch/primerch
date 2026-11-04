@@ -105,11 +105,11 @@ def rows(prs, merged=False, limit=10, full_names=False):
 
 def chart(file, alt, width="100%"):
     base = f"https://raw.githubusercontent.com/{LOGIN}/{LOGIN}/main/assets"
-    return f'''<picture>
+    return f'''<a href="{base}/github/{file}" title="Open full-size chart"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="{base}/github_dark/{file}">
   <source media="(prefers-color-scheme: light)" srcset="{base}/github/{file}">
   <img alt="{alt}" src="{base}/github/{file}" width="{width}">
-</picture>'''
+</picture></a>'''
 
 
 def render(prs):
@@ -155,6 +155,8 @@ The headline shows lifetime contributions; the trend shows the past year. Public
 
 {chart('1-repos-per-language.svg', 'Language distribution across public source repositories', '340')}
 {chart('4-productive-time.svg', 'Public commit activity by hour in Asia/Shanghai', '340')}
+
+Language and hourly charts cover public code only. Select a chart to view it at full size.
 
 <details>
 <summary>More charts and what these numbers mean</summary>
