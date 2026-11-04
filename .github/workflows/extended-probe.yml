@@ -1,0 +1,35 @@
+name: Verify Stats Extended anonymous contribution access
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check anonymized contribution visibility
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api graphql -f query='query { user(login:"primerch") { contributionsCollection { restrictedContributionsCount contributionCalendar { totalContributions } } } }' --jq '.data.user.contributionsCollection'
+      - name: Generate Stats Extended card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: stats
+          options: username=primerch&show=contributions,prs_merged&hide=stars,commits,prs,issues,contribs&hide_rank=true&disable_animations=true&number_format=long&custom_title=Verified%20contribution%20totals
+          path: candidate/stats.svg
+          token: ${{ github.token }}
+          core_version: 2.2.1
+          fail_on_error: true
+      - name: Read only aggregate card labels
+        run: |
+          python3 - <<'PY'
+          from xml.etree import ElementTree as ET
+          root = ET.parse('candidate/stats.svg').getroot()
+          for item in root.iter('{http://www.w3.org/2000/svg}text'):
+              print(' '.join(item.itertext()))
+          PY
