@@ -1,0 +1,182 @@
+[
+  {
+    "number": 883,
+    "title": "fix: route ES module consumers to the ESM build",
+    "url": "https://github.com/opentypejs/opentype.js/pull/883",
+    "state": "OPEN",
+    "mergedAt": null,
+    "createdAt": "2026-11-03T09:56:18Z",
+    "updatedAt": "2026-11-03T09:56:18Z",
+    "additions": 48,
+    "deletions": 0,
+    "repository": {
+      "nameWithOwner": "opentypejs/opentype.js",
+      "isPrivate": false,
+      "owner": {
+        "login": "opentypejs"
+      }
+    }
+  },
+  {
+    "number": 460,
+    "title": "fix(react): keep token refresh pending through transient outages",
+    "url": "https://github.com/convex/better-auth/pull/460",
+    "state": "OPEN",
+    "mergedAt": null,
+    "createdAt": "2026-11-03T08:58:13Z",
+    "updatedAt": "2026-11-03T16:37:45Z",
+    "additions": 2376,
+    "deletions": 85,
+    "repository": {
+      "nameWithOwner": "convex/better-auth",
+      "isPrivate": false,
+      "owner": {
+        "login": "convex"
+      }
+    }
+  },
+  {
+    "number": 241,
+    "title": "fix(pptx): retain paint ownership for held animation frames",
+    "url": "https://github.com/ChristopherVR/ooxml/pull/241",
+    "state": "MERGED",
+    "mergedAt": "2026-11-03T10:46:25Z",
+    "createdAt": "2026-11-03T08:57:37Z",
+    "updatedAt": "2026-11-03T10:47:07Z",
+    "additions": 104,
+    "deletions": 8,
+    "repository": {
+      "nameWithOwner": "ChristopherVR/ooxml",
+      "isPrivate": false,
+      "owner": {
+        "login": "ChristopherVR"
+      }
+    }
+  },
+  {
+    "number": 631,
+    "title": "fix: retain auth configuration ownership after token awaits",
+    "url": "https://github.com/convex/convex-backend/pull/631",
+    "state": "OPEN",
+    "mergedAt": null,
+    "createdAt": "2026-11-03T08:57:33Z",
+    "updatedAt": "2026-11-03T09:53:16Z",
+    "additions": 246,
+    "deletions": 6,
+    "repository": {
+      "nameWithOwner": "convex/convex-backend",
+      "isPrivate": false,
+      "owner": {
+        "login": "convex"
+      }
+    }
+  },
+  {
+    "number": 176,
+    "title": "fix: capture Vim keys before Monaco handles native shortcuts",
+    "url": "https://github.com/brijeshb42/monaco-vim/pull/176",
+    "state": "OPEN",
+    "mergedAt": null,
+    "createdAt": "2026-11-03T08:57:28Z",
+    "updatedAt": "2026-11-03T09:42:21Z",
+    "additions": 193,
+    "deletions": 7,
+    "repository": {
+      "nameWithOwner": "brijeshb42/monaco-vim",
+      "isPrivate": false,
+      "owner": {
+        "login": "brijeshb42"
+      }
+    }
+  },
+  {
+    "number": 120,
+    "title": "fix: mark GenericTableIndexes as a type-only import",
+    "url": "https://github.com/convex/rag/pull/120",
+    "state": "MERGED",
+    "mergedAt": "2026-11-03T23:59:10Z",
+    "createdAt": "2026-11-03T08:57:24Z",
+    "updatedAt": "2026-11-04T02:33:02Z",
+    "additions": 1,
+    "deletions": 1,
+    "repository": {
+      "nameWithOwner": "convex/rag",
+      "isPrivate": false,
+      "owner": {
+        "login": "convex"
+      }
+    }
+  },
+  {
+    "number": 882,
+    "title": "fix: route ES module consumers to the ESM build",
+    "url": "https://github.com/opentypejs/opentype.js/pull/882",
+    "state": "CLOSED",
+    "mergedAt": null,
+    "createdAt": "2026-11-03T08:57:20Z",
+    "updatedAt": "2026-11-03T09:27:41Z",
+    "additions": 48,
+    "deletions": 0,
+    "repository": {
+      "nameWithOwner": "opentypejs/opentype.js",
+      "isPrivate": false,
+      "owner": {
+        "login": "opentypejs"
+      }
+    }
+  },
+  {
+    "number": 185,
+    "title": "fix(animation): preserve authored PowerPoint playback and rendering",
+    "url": "https://github.com/ChristopherVR/pptx-viewer/pull/185",
+    "state": "MERGED",
+    "mergedAt": "2026-08-29T20:05:31Z",
+    "createdAt": "2026-08-29T02:14:45Z",
+    "updatedAt": "2026-08-30T05:15:50Z",
+    "additions": 4802,
+    "deletions": 482,
+    "repository": {
+      "nameWithOwner": "ChristopherVR/pptx-viewer",
+      "isPrivate": false,
+      "owner": {
+        "login": "ChristopherVR"
+      }
+    }
+  },
+  {
+    "number": 184,
+    "title": "fix(animation): preserve authored PowerPoint playback and rendering",
+    "url": "https://github.com/ChristopherVR/pptx-viewer/pull/184",
+    "state": "CLOSED",
+    "mergedAt": null,
+    "createdAt": "2026-08-29T01:46:23Z",
+    "updatedAt": "2026-08-29T02:11:49Z",
+    "additions": 4802,
+    "deletions": 482,
+    "repository": {
+      "nameWithOwner": "ChristopherVR/pptx-viewer",
+      "isPrivate": false,
+      "owner": {
+        "login": "ChristopherVR"
+      }
+    }
+  },
+  {
+    "number": 4126,
+    "title": "Update README.md",
+    "url": "https://github.com/hyperskill/intro-to-github/pull/4126",
+    "state": "CLOSED",
+    "mergedAt": null,
+    "createdAt": "2023-12-27T07:31:04Z",
+    "updatedAt": "2023-12-27T07:32:07Z",
+    "additions": 1,
+    "deletions": 1,
+    "repository": {
+      "nameWithOwner": "hyperskill/intro-to-github",
+      "isPrivate": false,
+      "owner": {
+        "login": "hyperskill"
+      }
+    }
+  }
+]

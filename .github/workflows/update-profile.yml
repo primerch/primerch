@@ -1,0 +1,39 @@
+name: Update contribution profile
+
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/**
+      - .github/workflows/update-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-profile
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Verify public-only output and PR status handling
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Refresh public contributions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_profile.py
+      - name: Commit contribution changes
+        run: |
+          if ! git diff --quiet -- README.md data/contributions.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add README.md data/contributions.json
+            git commit -m 'docs: refresh public contribution profile'
+            git push
+          fi
