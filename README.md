@@ -30,40 +30,40 @@ These projects have private source repositories. Also on GitHub: [GESP Exam Asse
 
 ## Contribution analytics
 
-<a href="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/0-profile-details.svg" title="Open full-size chart"><picture>
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/0-profile-details.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/0-profile-details.svg">
   <img alt="GitHub contribution trend over the past year, with account activity totals" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/0-profile-details.svg" width="100%">
-</picture></a>
+</picture>
 
-The headline shows lifetime contributions; the trend shows the past year. Public original repositories exclude forks.
+The headline shows lifetime contributions; the trend shows the past year. Public original repositories exclude forks. [Open full-size activity chart](https://raw.githubusercontent.com/primerch/primerch/main/assets/github/0-profile-details.svg).
 
-<a href="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/1-repos-per-language.svg" title="Open full-size chart"><picture>
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/1-repos-per-language.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/1-repos-per-language.svg">
   <img alt="Language distribution across public source repositories" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/1-repos-per-language.svg" width="340">
-</picture></a>
-<a href="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/4-productive-time.svg" title="Open full-size chart"><picture>
+</picture>
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/4-productive-time.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/4-productive-time.svg">
   <img alt="Public commit activity by hour in Asia/Shanghai" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/4-productive-time.svg" width="340">
-</picture></a>
+</picture>
 
-Language and hourly charts cover public code only. Select a chart to view it at full size.
+Language and hourly charts cover public code only.
 
 <details>
 <summary>More charts and what these numbers mean</summary>
 
-<a href="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/3-stats.svg" title="Open full-size chart"><picture>
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/3-stats.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/3-stats.svg">
   <img alt="Public GitHub stars, commits, pull requests, issues, and repositories contributed to" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/3-stats.svg" width="340">
-</picture></a>
-<a href="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/2-most-commit-language.svg" title="Open full-size chart"><picture>
+</picture>
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github_dark/2-most-commit-language.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/2-most-commit-language.svg">
   <img alt="Languages associated with public commit activity" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/github/2-most-commit-language.svg" width="340">
-</picture></a>
+</picture>
 
 - **Contributions** count qualifying GitHub activity, including commits, issues, PRs, reviews, and repository creation. The trend covers the past year and includes the anonymized private activity shared on my profile. It does not count lines of code.
 - **Merged PRs** show changes accepted by upstream projects. This homepage counts public external PRs separately from work in my own repositories.
@@ -99,4 +99,4 @@ Only public upstream repositories are counted. My own repositories and private w
 
 </details>
 
-<sub>Latest PR activity: 2026-11-04 11:24 UTC+8 · [Sync log](https://github.com/primerch/primerch/actions/workflows/update-profile.yml) · Refreshed hourly; GitHub scheduling may be delayed</sub>
+<sub>Latest PR activity: 2026-11-04 11:26 UTC+8 · [Sync log](https://github.com/primerch/primerch/actions/workflows/update-profile.yml) · Refreshed hourly; GitHub scheduling may be delayed</sub>

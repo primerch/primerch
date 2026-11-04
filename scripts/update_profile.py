@@ -105,11 +105,11 @@ def rows(prs, merged=False, limit=10, full_names=False):
 
 def chart(file, alt, width="100%"):
     base = f"https://raw.githubusercontent.com/{LOGIN}/{LOGIN}/main/assets"
-    return f'''<a href="{base}/github/{file}" title="Open full-size chart"><picture>
+    return f'''<picture>
   <source media="(prefers-color-scheme: dark)" srcset="{base}/github_dark/{file}">
   <source media="(prefers-color-scheme: light)" srcset="{base}/github/{file}">
   <img alt="{alt}" src="{base}/github/{file}" width="{width}">
-</picture></a>'''
+</picture>'''
 
 
 def render(prs):
@@ -151,12 +151,12 @@ These projects have private source repositories. Also on GitHub: [GESP Exam Asse
 
 {chart('0-profile-details.svg', 'GitHub contribution trend over the past year, with account activity totals')}
 
-The headline shows lifetime contributions; the trend shows the past year. Public original repositories exclude forks.
+The headline shows lifetime contributions; the trend shows the past year. Public original repositories exclude forks. [Open full-size activity chart](https://raw.githubusercontent.com/{LOGIN}/{LOGIN}/main/assets/github/0-profile-details.svg).
 
 {chart('1-repos-per-language.svg', 'Language distribution across public source repositories', '340')}
 {chart('4-productive-time.svg', 'Public commit activity by hour in Asia/Shanghai', '340')}
 
-Language and hourly charts cover public code only. Select a chart to view it at full size.
+Language and hourly charts cover public code only.
 
 <details>
 <summary>More charts and what these numbers mean</summary>
