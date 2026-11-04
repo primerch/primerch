@@ -107,13 +107,14 @@ def rows(prs, merged=False, limit=10, full_names=False):
 def artwork(name, alt, width="100%", category='brand', responsive=True):
     base = f"https://raw.githubusercontent.com/{LOGIN}/{LOGIN}/main/assets"
     if responsive:
-        # GitHub rewrites an entire prefers-color-scheme expression, dropping
-        # any combined width condition. Keep width queries and theme selection
-        # separate so both manual GitHub themes and mobile layouts work.
-        return '\n'.join(f'''<picture>
-  <source media="(max-width: 600px)" srcset="{base}/{category}/{name}-{theme}-mobile.svg">
-  <img alt="{alt}" src="{base}/{category}/{name}-{theme}.svg#gh-{theme}-mode-only" width="{width}">
-</picture>''' for theme in ('dark', 'light'))
+        # GitHub drops width conditions when rewriting theme media queries.
+        # Brand panels keep a consistent midnight finish in either host theme;
+        # a width-only source preserves their mobile composition. Stats cards
+        # below use GitHub's supported theme-only picture sources.
+        return f'''<picture>
+  <source media="(max-width: 600px)" srcset="{base}/{category}/{name}-dark-mobile.svg">
+  <img alt="{alt}" src="{base}/{category}/{name}-dark.svg" width="{width}">
+</picture>'''
     return f'''<picture>
   <source media="(prefers-color-scheme: dark)" srcset="{base}/{category}/{name}-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="{base}/{category}/{name}-light.svg">

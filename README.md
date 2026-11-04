@@ -1,10 +1,6 @@
 <picture>
   <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark-mobile.svg">
-  <img alt="Reacher. Build products. Give fixes back. Selected verified upstream merges." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark.svg#gh-dark-mode-only" width="100%">
-</picture>
-<picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-light-mobile.svg">
-  <img alt="Reacher. Build products. Give fixes back. Selected verified upstream merges." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-light.svg#gh-light-mode-only" width="100%">
+  <img alt="Reacher. Build products. Give fixes back. Selected verified upstream merges." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark.svg" width="100%">
 </picture>
 
 **13,125 lifetime contributions.** Public work and anonymous private activity, counted together.
@@ -15,11 +11,7 @@
 
 <picture>
   <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-dark-mobile.svg">
-  <img alt="SupaSchool: a teaching and learning platform. Imminfo: an immigration information website. Blink Approval: a homework review interface." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-dark.svg#gh-dark-mode-only" width="100%">
-</picture>
-<picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-light-mobile.svg">
-  <img alt="SupaSchool: a teaching and learning platform. Imminfo: an immigration information website. Blink Approval: a homework review interface." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-light.svg#gh-light-mode-only" width="100%">
+  <img alt="SupaSchool: a teaching and learning platform. Imminfo: an immigration information website. Blink Approval: a homework review interface." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-dark.svg" width="100%">
 </picture>
 
 Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/primerch/gesp-exam-assessment) · [Purrge Website](https://github.com/primerch/purrge-website).
@@ -41,11 +33,7 @@ Lifetime contributions include anonymous private activity. The language chart co
 
 <picture>
   <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg">
-  <img alt="9,855 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg#gh-dark-mode-only" width="100%">
-</picture>
-<picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-light-mobile.svg">
-  <img alt="9,855 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-light.svg#gh-light-mode-only" width="100%">
+  <img alt="9,855 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg" width="100%">
 </picture>
 
 **9,855 contributions in the past year**, including **9,795 anonymous private contributions**. Private repository names, commits, and source code stay private.
