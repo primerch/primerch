@@ -26,13 +26,13 @@ query($login:String!, $cursor:String) {
 
 # Human summaries of already-public PRs. Future contributions fall back to their titles.
 SUMMARIES = {
-    "https://github.com/convex/rag/pull/120": "修正类型导入，解决构建兼容问题",
-    "https://github.com/ChristopherVR/ooxml/pull/241": "保留 PPTX 动画结束后的填充与描边",
-    "https://github.com/ChristopherVR/pptx-viewer/pull/185": "修复 PowerPoint 动画播放与渲染",
-    "https://github.com/opentypejs/opentype.js/pull/883": "让 ES module 使用正确的 ESM 构建",
-    "https://github.com/convex/better-auth/pull/460": "避免短暂网络故障中断登录令牌刷新",
-    "https://github.com/convex/convex-backend/pull/631": "修复异步令牌获取中的认证配置竞态",
-    "https://github.com/brijeshb42/monaco-vim/pull/176": "让 Vim 按键先于编辑器原生快捷键处理",
+    "https://github.com/convex/rag/pull/120": "Fix a type-only import for build compatibility",
+    "https://github.com/ChristopherVR/ooxml/pull/241": "Preserve fills and strokes after PPTX animations",
+    "https://github.com/ChristopherVR/pptx-viewer/pull/185": "Restore authored PowerPoint playback and rendering",
+    "https://github.com/opentypejs/opentype.js/pull/883": "Route ES module consumers to the ESM build",
+    "https://github.com/convex/better-auth/pull/460": "Keep token refresh pending during temporary outages",
+    "https://github.com/convex/convex-backend/pull/631": "Fix auth configuration races during token retrieval",
+    "https://github.com/brijeshb42/monaco-vim/pull/176": "Handle Vim keys before native editor shortcuts",
 }
 
 
@@ -87,13 +87,14 @@ def search(query):
     return "https://github.com/pulls?q=" + quote(f"is:pr author:{LOGIN} is:public -user:{LOGIN} {query}", safe="")
 
 
-def rows(prs, merged=False):
+def rows(prs, merged=False, limit=10, full_names=False):
     if not prs:
-        return "暂时没有记录\n"
-    headers = "| 项目 / PR | 做了什么 | 合并日期 |\n| --- | --- | --- |\n" if merged else "| 项目 / PR | 做了什么 |\n| --- | --- |\n"
+        return "No pull requests here yet.\n"
+    headers = "| Project / PR | Contribution | Merged |\n| --- | --- | --- |\n" if merged else "| Project / PR | Contribution |\n| --- | --- |\n"
     output = []
-    for pr in prs[:10]:
-        project = text(pr["repository"]["nameWithOwner"])
+    for pr in prs[:limit] if limit else prs:
+        name = pr["repository"]["nameWithOwner"]
+        project = text(name if full_names else name.split("/", 1)[1])
         summary = text(SUMMARIES.get(pr["url"], pr["title"]))
         row = f"| [{project} #{pr['number']}]({pr['url']}) | {summary} |"
         if merged:
@@ -111,36 +112,60 @@ def render(prs):
     additions = sum(pr["additions"] for pr in merged)
     deletions = sum(pr["deletions"] for pr in merged)
     latest = max((pr["updatedAt"] for pr in prs), default=None)
-    activity = f"最近 PR 动态：{date(latest):%Y-%m-%d %H:%M}（北京时间）" if latest else "尚无公开外部 PR"
+    activity = f"Latest PR activity: {date(latest):%Y-%m-%d %H:%M} UTC+8" if latest else "No public upstream PRs yet"
     return f"""# Reacher
 
 I build apps people crave, and contribute fixes back upstream.
 
-## 开源贡献
+## Open-source contributions
 
-**{len(merged)} 个 PR 已合并到 {merged_projects} 个项目** · {len(opened)} 个正在等待合并
+**{len(merged)} pull requests merged across {merged_projects} projects** · {len(opened)} open
 
-[查看已合并 PR]({search('is:merged sort:updated-desc')}) · [查看待合并 PR]({search('is:open sort:updated-desc')})
+[Merged PRs]({search('is:merged sort:updated-desc')}) · [Open PRs]({search('is:open sort:updated-desc')}) · [Full history](https://github.com/{LOGIN}/{LOGIN}/blob/main/HISTORY.md)
 
-### 已被项目采纳
+### Merged contributions
 
 {rows(merged, merged=True)}
-已合并 PR 的代码改动合计：**+{additions:,} / −{deletions:,} 行**
+Merged code changes: **+{additions:,} / −{deletions:,} lines**
 
-### 等待下一次合并
+### Open pull requests
 
 {rows(opened)}
 <details>
-<summary>完整统计与已关闭记录</summary>
+<summary>All-time totals and closed PRs</summary>
 
-累计向 {len({pr['repository']['nameWithOwner'] for pr in prs})} 个公开外部仓库提交 {len(prs)} 个 PR：{len(merged)} 个已合并、{len(opened)} 个待合并、{len(closed)} 个已关闭未合并。
+{len(prs)} PRs submitted to {len({pr['repository']['nameWithOwner'] for pr in prs})} public upstream repositories: {len(merged)} merged, {len(opened)} open, {len(closed)} closed without merging.
 
 {rows(closed)}
-只统计公开外部仓库；自己的仓库和私有项目不计入。代码行数按已合并 PR 的 diff 汇总，包含测试，不代表去重后的代码总量。已关闭不等于已合并。
+Only public upstream repositories are counted. My own repositories and private work are excluded. Line counts sum merged PR diffs, including tests; they are not a count of unique lines. Closed PRs are not counted as merged.
 
 </details>
 
-<sub>{activity} · [自动同步记录](https://github.com/{LOGIN}/{LOGIN}/actions/workflows/update-profile.yml) · 计划每小时更新，GitHub 调度可能延迟</sub>
+<sub>{activity} · [Sync log](https://github.com/{LOGIN}/{LOGIN}/actions/workflows/update-profile.yml) · Refreshed hourly; GitHub scheduling may be delayed</sub>
+"""
+
+
+def render_history(prs):
+    prs = public_external(prs)
+    merged = sorted((pr for pr in prs if pr["state"] == "MERGED"), key=lambda pr: pr["mergedAt"], reverse=True)
+    opened = sorted((pr for pr in prs if pr["state"] == "OPEN"), key=lambda pr: pr["updatedAt"], reverse=True)
+    closed = sorted((pr for pr in prs if pr["state"] == "CLOSED"), key=lambda pr: pr["updatedAt"], reverse=True)
+    return f"""# Contribution history
+
+[Back to my profile](https://github.com/{LOGIN})
+
+Every public upstream PR, with the most recent merges first. This page refreshes automatically with the profile. A merged PR moves from the open list into the merged history on the next successful sync.
+
+## Merged contributions
+
+{rows(merged, merged=True, limit=None, full_names=True)}
+## Open pull requests
+
+{rows(opened, limit=None, full_names=True)}
+## Closed without merging
+
+{rows(closed, limit=None, full_names=True)}
+Public upstream repositories only. The homepage shows the latest ten entries per section; this history has no entry limit. Earlier snapshots remain in this repository's Git history.
 """
 
 
@@ -151,10 +176,12 @@ def main():
     prs = fetch_pull_requests(token)
     # Both files are prepared only after every API page has succeeded.
     readme = render(prs)
+    history = render_history(prs)
     data = json.dumps(prs, ensure_ascii=False, indent=2) + "\n"
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data/contributions.json").write_text(data)
     (ROOT / "README.md").write_text(readme)
+    (ROOT / "HISTORY.md").write_text(history)
     print(f"Profile generated from {len(prs)} public external pull requests")
 
 

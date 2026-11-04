@@ -2,44 +2,44 @@
 
 I build apps people crave, and contribute fixes back upstream.
 
-## 开源贡献
+## Open-source contributions
 
-**3 个 PR 已合并到 3 个项目** · 4 个正在等待合并
+**3 pull requests merged across 3 projects** · 4 open
 
-[查看已合并 PR](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Amerged%20sort%3Aupdated-desc) · [查看待合并 PR](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Aopen%20sort%3Aupdated-desc)
+[Merged PRs](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Amerged%20sort%3Aupdated-desc) · [Open PRs](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Aopen%20sort%3Aupdated-desc) · [Full history](https://github.com/primerch/primerch/blob/main/HISTORY.md)
 
-### 已被项目采纳
+### Merged contributions
 
-| 项目 / PR | 做了什么 | 合并日期 |
+| Project / PR | Contribution | Merged |
 | --- | --- | --- |
-| [convex/rag #120](https://github.com/convex/rag/pull/120) | 修正类型导入，解决构建兼容问题 | 2026-11-04 |
-| [ChristopherVR/ooxml #241](https://github.com/ChristopherVR/ooxml/pull/241) | 保留 PPTX 动画结束后的填充与描边 | 2026-11-03 |
-| [ChristopherVR/pptx-viewer #185](https://github.com/ChristopherVR/pptx-viewer/pull/185) | 修复 PowerPoint 动画播放与渲染 | 2026-08-30 |
+| [rag #120](https://github.com/convex/rag/pull/120) | Fix a type-only import for build compatibility | 2026-11-04 |
+| [ooxml #241](https://github.com/ChristopherVR/ooxml/pull/241) | Preserve fills and strokes after PPTX animations | 2026-11-03 |
+| [pptx-viewer #185](https://github.com/ChristopherVR/pptx-viewer/pull/185) | Restore authored PowerPoint playback and rendering | 2026-08-30 |
 
-已合并 PR 的代码改动合计：**+4,907 / −491 行**
+Merged code changes: **+4,907 / −491 lines**
 
-### 等待下一次合并
+### Open pull requests
 
-| 项目 / PR | 做了什么 |
+| Project / PR | Contribution |
 | --- | --- |
-| [convex/better-auth #460](https://github.com/convex/better-auth/pull/460) | 避免短暂网络故障中断登录令牌刷新 |
-| [opentypejs/opentype.js #883](https://github.com/opentypejs/opentype.js/pull/883) | 让 ES module 使用正确的 ESM 构建 |
-| [convex/convex-backend #631](https://github.com/convex/convex-backend/pull/631) | 修复异步令牌获取中的认证配置竞态 |
-| [brijeshb42/monaco-vim #176](https://github.com/brijeshb42/monaco-vim/pull/176) | 让 Vim 按键先于编辑器原生快捷键处理 |
+| [better-auth #460](https://github.com/convex/better-auth/pull/460) | Keep token refresh pending during temporary outages |
+| [opentype.js #883](https://github.com/opentypejs/opentype.js/pull/883) | Route ES module consumers to the ESM build |
+| [convex-backend #631](https://github.com/convex/convex-backend/pull/631) | Fix auth configuration races during token retrieval |
+| [monaco-vim #176](https://github.com/brijeshb42/monaco-vim/pull/176) | Handle Vim keys before native editor shortcuts |
 
 <details>
-<summary>完整统计与已关闭记录</summary>
+<summary>All-time totals and closed PRs</summary>
 
-累计向 8 个公开外部仓库提交 10 个 PR：3 个已合并、4 个待合并、3 个已关闭未合并。
+10 PRs submitted to 8 public upstream repositories: 3 merged, 4 open, 3 closed without merging.
 
-| 项目 / PR | 做了什么 |
+| Project / PR | Contribution |
 | --- | --- |
-| [opentypejs/opentype.js #882](https://github.com/opentypejs/opentype.js/pull/882) | fix: route ES module consumers to the ESM build |
-| [ChristopherVR/pptx-viewer #184](https://github.com/ChristopherVR/pptx-viewer/pull/184) | fix(animation): preserve authored PowerPoint playback and rendering |
-| [hyperskill/intro-to-github #4126](https://github.com/hyperskill/intro-to-github/pull/4126) | Update README.md |
+| [opentype.js #882](https://github.com/opentypejs/opentype.js/pull/882) | fix: route ES module consumers to the ESM build |
+| [pptx-viewer #184](https://github.com/ChristopherVR/pptx-viewer/pull/184) | fix(animation): preserve authored PowerPoint playback and rendering |
+| [intro-to-github #4126](https://github.com/hyperskill/intro-to-github/pull/4126) | Update README.md |
 
-只统计公开外部仓库；自己的仓库和私有项目不计入。代码行数按已合并 PR 的 diff 汇总，包含测试，不代表去重后的代码总量。已关闭不等于已合并。
+Only public upstream repositories are counted. My own repositories and private work are excluded. Line counts sum merged PR diffs, including tests; they are not a count of unique lines. Closed PRs are not counted as merged.
 
 </details>
 
-<sub>最近 PR 动态：2026-11-04 10:33（北京时间） · [自动同步记录](https://github.com/primerch/primerch/actions/workflows/update-profile.yml) · 计划每小时更新，GitHub 调度可能延迟</sub>
+<sub>Latest PR activity: 2026-11-04 10:33 UTC+8 · [Sync log](https://github.com/primerch/primerch/actions/workflows/update-profile.yml) · Refreshed hourly; GitHub scheduling may be delayed</sub>
