@@ -1,6 +1,7 @@
 """Build a GitHub profile from public contributions, using only the standard library."""
 
 import json
+import hashlib
 import os
 import sys
 from datetime import datetime
@@ -106,19 +107,26 @@ def rows(prs, merged=False, limit=10, full_names=False):
 
 def artwork(name, alt, width="100%", category='brand', responsive=True):
     base = f"https://raw.githubusercontent.com/{LOGIN}/{LOGIN}/main/assets"
+
+    def asset(theme, mobile=False):
+        filename = f"{name}-{theme}{'-mobile' if mobile else ''}.svg"
+        path = ROOT / 'assets' / category / filename
+        version = hashlib.sha256(path.read_bytes()).hexdigest()[:12] if path.is_file() else 'pending'
+        return f'{base}/{category}/{filename}?v={version}'
+
     if responsive:
         # GitHub drops width conditions when rewriting theme media queries.
         # Brand panels keep a consistent midnight finish in either host theme;
         # a width-only source preserves their mobile composition. Stats cards
         # below use GitHub's supported theme-only picture sources.
         return f'''<picture>
-  <source media="(max-width: 600px)" srcset="{base}/{category}/{name}-dark-mobile.svg">
-  <img alt="{alt}" src="{base}/{category}/{name}-dark.svg" width="{width}">
+  <source media="(max-width: 600px)" srcset="{asset('dark', True)}">
+  <img alt="{alt}" src="{asset('dark')}" width="{width}">
 </picture>'''
     return f'''<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="{base}/{category}/{name}-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="{base}/{category}/{name}-light.svg">
-  <img alt="{alt}" src="{base}/{category}/{name}-light.svg" width="{width}">
+  <source media="(prefers-color-scheme: dark)" srcset="{asset('dark')}">
+  <source media="(prefers-color-scheme: light)" srcset="{asset('light')}">
+  <img alt="{alt}" src="{asset('light')}" width="{width}">
 </picture>'''
 
 

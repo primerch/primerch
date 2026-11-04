@@ -1,4 +1,4 @@
-"""Clarify public-only PR labels without changing Stats Extended's numbers."""
+"""Clarify public PR labels and align cards without changing generated numbers."""
 
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -13,4 +13,12 @@ for theme in ('dark', 'light'):
         if element.text:
             element.text = element.text.replace('Total PRs Merged:', 'Public merged PRs:').replace('Total PRs:', 'Public PRs:')
     tree.write(path, encoding='unicode')
-print('Public PR scope labels verified; all generated values preserved')
+    language_path = ROOT / f'assets/extended/languages-{theme}.svg'
+    languages = ET.parse(language_path)
+    height = max(float(tree.getroot().get('height')), float(languages.getroot().get('height')))
+    for card, destination in ((tree, path), (languages, language_path)):
+        root = card.getroot()
+        root.set('height', f'{height:g}')
+        root.set('viewBox', f"0 0 {root.get('width')} {height:g}")
+        card.write(destination, encoding='unicode')
+print('Public scope labels and aligned card canvases verified; generated values preserved')

@@ -1,6 +1,6 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark-mobile.svg">
-  <img alt="Reacher. Build products. Give fixes back. Selected verified upstream merges." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark.svg" width="100%">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark-mobile.svg?v=5a22e96602fe">
+  <img alt="Reacher. Build products. Give fixes back. Selected verified upstream merges." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark.svg?v=fed772d9f000" width="100%">
 </picture>
 
 **13,126 lifetime contributions.** Public work and anonymous private activity, counted together.
@@ -10,8 +10,8 @@
 ## Built by me
 
 <picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-dark-mobile.svg">
-  <img alt="SupaSchool: a teaching and learning platform. Imminfo: an immigration information website. Blink Approval: a homework review interface." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-dark.svg" width="100%">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-dark-mobile.svg?v=35b30f45315f">
+  <img alt="SupaSchool: a teaching and learning platform. Imminfo: an immigration information website. Blink Approval: a homework review interface." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/products-dark.svg?v=c8ba629feae3" width="100%">
 </picture>
 
 Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/primerch/gesp-exam-assessment) · [Purrge Website](https://github.com/primerch/purrge-website).
@@ -19,21 +19,21 @@ Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/
 ## GitHub, in numbers
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg">
-  <img alt="GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg" width="400">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-dark.svg?v=f62e509c2071">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=6aa0c7306972">
+  <img alt="GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=6aa0c7306972" width="400">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-light.svg">
-  <img alt="GitHub Stats Extended: language distribution by public source-code bytes; private code excluded" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-light.svg" width="400">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-dark.svg?v=db1062dc404e">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-light.svg?v=cb03b0855562">
+  <img alt="GitHub Stats Extended: language distribution by public source-code bytes; private code excluded" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-light.svg?v=cb03b0855562" width="400">
 </picture>
 
 Lifetime contributions include anonymous private activity. The language chart covers public source code.
 
 <picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg">
-  <img alt="9,856 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg" width="100%">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg?v=849661650414">
+  <img alt="9,856 contributions over the past year, including 9,795 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg?v=a22eda8fcefd" width="100%">
 </picture>
 
 **9,856 contributions in the past year**, including **9,795 anonymous private contributions**. Private repository names, commits, and source code stay private.
