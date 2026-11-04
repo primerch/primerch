@@ -59,6 +59,7 @@ class AnonymousActivityTests(unittest.TestCase):
         states[1]['lifetimeContributions'] = 1
         states[1]['lastYearContributions'] = 1
         states[1]['anonymousPrivateLastYear'] = 1
+        states[1]['days'] = [['2026-11-04', 1]]
         states[2]['lifetimeContributions'] = 1234567
         states[2]['lastYearContributions'] = 123456
         states[2]['anonymousPrivateLastYear'] = 123000

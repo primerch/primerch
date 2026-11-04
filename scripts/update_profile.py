@@ -106,11 +106,16 @@ def rows(prs, merged=False, limit=10, full_names=False):
 
 def artwork(name, alt, width="100%", category='brand', responsive=True):
     base = f"https://raw.githubusercontent.com/{LOGIN}/{LOGIN}/main/assets"
-    mobile = f'''  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="{base}/{category}/{name}-dark-mobile.svg">
-  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="{base}/{category}/{name}-light-mobile.svg">
-''' if responsive else ''
+    if responsive:
+        # GitHub rewrites an entire prefers-color-scheme expression, dropping
+        # any combined width condition. Keep width queries and theme selection
+        # separate so both manual GitHub themes and mobile layouts work.
+        return '\n'.join(f'''<picture>
+  <source media="(max-width: 600px)" srcset="{base}/{category}/{name}-{theme}-mobile.svg">
+  <img alt="{alt}" src="{base}/{category}/{name}-{theme}.svg#gh-{theme}-mode-only" width="{width}">
+</picture>''' for theme in ('dark', 'light'))
     return f'''<picture>
-{mobile}  <source media="(prefers-color-scheme: dark)" srcset="{base}/{category}/{name}-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="{base}/{category}/{name}-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="{base}/{category}/{name}-light.svg">
   <img alt="{alt}" src="{base}/{category}/{name}-light.svg" width="{width}">
 </picture>'''
