@@ -1,38 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-07",
-  "lifetimeContributions": 13881,
-  "lastYearContributions": 10605,
-  "anonymousPrivateLastYear": 10539,
+  "asOf": "2026-11-08",
+  "lifetimeContributions": 13888,
+  "lastYearContributions": 10618,
+  "anonymousPrivateLastYear": 10552,
   "days": [
-    [
-      "2025-11-02",
-      9
-    ],
-    [
-      "2025-11-03",
-      1
-    ],
-    [
-      "2025-11-04",
-      36
-    ],
-    [
-      "2025-11-05",
-      18
-    ],
-    [
-      "2025-11-06",
-      18
-    ],
-    [
-      "2025-11-07",
-      0
-    ],
-    [
-      "2025-11-08",
-      5
-    ],
     [
       "2025-11-09",
       3
@@ -1488,6 +1460,10 @@
     [
       "2026-11-07",
       28
+    ],
+    [
+      "2026-11-08",
+      13
     ]
   ]
 }
