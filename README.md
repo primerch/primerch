@@ -32,11 +32,11 @@ Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/
 Lifetime contributions include anonymous private activity. The language chart covers public source code.
 
 <picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg?v=2edbedf90e31">
-  <img alt="10,618 contributions over the past year, including 10,552 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg?v=ae9816f68227" width="100%">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg?v=0882441f1685">
+  <img alt="10,531 contributions over the past year, including 10,465 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg?v=61a2765ebf5f" width="100%">
 </picture>
 
-**10,618 contributions in the past year**, including **10,552 anonymous private contributions**. Private repository names, commits, and source code stay private.
+**10,531 contributions in the past year**, including **10,465 anonymous private contributions**. Private repository names, commits, and source code stay private.
 
 ## Accepted upstream
 
@@ -92,4 +92,4 @@ These PR totals count public upstream repositories. My own repositories and priv
 
 </details>
 
-<sub>Data refreshed 2026-11-08 · Latest PR activity: 2026-11-04 13:51 UTC+8 · [Hourly sync](https://github.com/primerch/primerch/actions/workflows/update-profile.yml)</sub>
+<sub>Data refreshed 2026-11-09 · Latest PR activity: 2026-11-04 13:51 UTC+8 · [Hourly sync](https://github.com/primerch/primerch/actions/workflows/update-profile.yml)</sub>
