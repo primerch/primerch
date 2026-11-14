@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-13",
+  "asOf": "2026-11-14",
   "lifetimeContributions": 13974,
-  "lastYearContributions": 10609,
-  "anonymousPrivateLastYear": 10543,
+  "lastYearContributions": 10617,
+  "anonymousPrivateLastYear": 10551,
   "days": [
     [
       "2025-11-09",
@@ -1484,6 +1484,10 @@
     [
       "2026-11-13",
       19
+    ],
+    [
+      "2026-11-14",
+      8
     ]
   ]
 }
