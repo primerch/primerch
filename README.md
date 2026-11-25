@@ -3,7 +3,7 @@
   <img alt="Reacher. Build products. Give fixes back. Selected verified upstream merges." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark.svg?v=fed772d9f000" width="100%">
 </picture>
 
-**14,451 lifetime contributions.** Public work and anonymous private activity, counted together.
+**14,474 lifetime contributions.** Public work and anonymous private activity, counted together.
 
 [Merged upstream (3)](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Amerged%20sort%3Aupdated-desc) · [Open PRs (5)](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Aopen%20sort%3Aupdated-desc) · [Full contribution history](https://github.com/primerch/primerch/blob/main/HISTORY.md)
 
@@ -19,9 +19,9 @@ Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/
 ## GitHub, in numbers
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-dark.svg?v=21357a76092f">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=5ebeab0da343">
-  <img alt="GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=5ebeab0da343" width="400">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-dark.svg?v=f93453bdbc51">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=eaa184d8aecf">
+  <img alt="GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=eaa184d8aecf" width="400">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-dark.svg?v=5760d7895376">
@@ -32,11 +32,11 @@ Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/
 Lifetime contributions include anonymous private activity. The language chart covers public source code.
 
 <picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg?v=ef9d66291887">
-  <img alt="10,849 contributions over the past year, including 10,742 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg?v=3944f2163b55" width="100%">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg?v=9f8f7cc56e7b">
+  <img alt="10,870 contributions over the past year, including 10,763 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg?v=af671de3226d" width="100%">
 </picture>
 
-**10,849 contributions in the past year**, including **10,742 anonymous private contributions**. Private repository names, commits, and source code stay private.
+**10,870 contributions in the past year**, including **10,763 anonymous private contributions**. Private repository names, commits, and source code stay private.
 
 ## Accepted upstream
 
