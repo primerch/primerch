@@ -95,4 +95,4 @@ These PR totals count public upstream repositories. My own repositories and priv
 
 </details>
 
-<sub>Data refreshed 2026-11-27 · Latest PR activity: 2026-11-27 11:16 UTC+8 · [Hourly sync](https://github.com/primerch/primerch/actions/workflows/update-profile.yml)</sub>
+<sub>Data refreshed 2026-11-27 · Latest PR activity: 2026-11-27 19:45 UTC+8 · [Hourly sync](https://github.com/primerch/primerch/actions/workflows/update-profile.yml)</sub>
