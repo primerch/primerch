@@ -16,6 +16,9 @@ Every public upstream PR, with the most recent merges first. This page refreshes
 
 | Project / PR | Contribution |
 | --- | --- |
+| [ChristopherVR/emf-converter #34](https://github.com/ChristopherVR/emf-converter/pull/34) | fix(build): preserve Node canvas bundler directives |
+| [convex/better-auth #495](https://github.com/convex/better-auth/pull/495) | fix(adapter): allow creation and expiry range filters together |
+| [convex/convex-backend #673](https://github.com/convex/convex-backend/pull/673) | fix(cli): resolve hoisted external packages in workspaces |
 | [convex/better-auth #469](https://github.com/convex/better-auth/pull/469) | fix(adapter): paginate unique session tokens in creation order |
 | [convex/better-auth #460](https://github.com/convex/better-auth/pull/460) | Keep token refresh pending during temporary outages |
 | [opentypejs/opentype.js #883](https://github.com/opentypejs/opentype.js/pull/883) | Route ES module consumers to the ESM build |

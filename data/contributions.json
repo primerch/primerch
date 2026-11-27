@@ -1,5 +1,59 @@
 [
   {
+    "number": 34,
+    "title": "fix(build): preserve Node canvas bundler directives",
+    "url": "https://github.com/ChristopherVR/emf-converter/pull/34",
+    "state": "OPEN",
+    "mergedAt": null,
+    "createdAt": "2026-11-27T03:14:31Z",
+    "updatedAt": "2026-11-27T03:16:09Z",
+    "additions": 16,
+    "deletions": 1,
+    "repository": {
+      "nameWithOwner": "ChristopherVR/emf-converter",
+      "isPrivate": false,
+      "owner": {
+        "login": "ChristopherVR"
+      }
+    }
+  },
+  {
+    "number": 495,
+    "title": "fix(adapter): allow creation and expiry range filters together",
+    "url": "https://github.com/convex/better-auth/pull/495",
+    "state": "OPEN",
+    "mergedAt": null,
+    "createdAt": "2026-11-27T03:10:17Z",
+    "updatedAt": "2026-11-27T03:14:14Z",
+    "additions": 76,
+    "deletions": 27,
+    "repository": {
+      "nameWithOwner": "convex/better-auth",
+      "isPrivate": false,
+      "owner": {
+        "login": "convex"
+      }
+    }
+  },
+  {
+    "number": 673,
+    "title": "fix(cli): resolve hoisted external packages in workspaces",
+    "url": "https://github.com/convex/convex-backend/pull/673",
+    "state": "OPEN",
+    "mergedAt": null,
+    "createdAt": "2026-11-27T02:59:28Z",
+    "updatedAt": "2026-11-27T03:04:36Z",
+    "additions": 87,
+    "deletions": 6,
+    "repository": {
+      "nameWithOwner": "convex/convex-backend",
+      "isPrivate": false,
+      "owner": {
+        "login": "convex"
+      }
+    }
+  },
+  {
     "number": 469,
     "title": "fix(adapter): paginate unique session tokens in creation order",
     "url": "https://github.com/convex/better-auth/pull/469",
