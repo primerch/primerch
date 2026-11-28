@@ -3,7 +3,7 @@
   <img alt="Reacher. Build products. Give fixes back. Selected verified upstream merges." src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/hero-dark.svg?v=fed772d9f000" width="100%">
 </picture>
 
-**14,516 lifetime contributions.** Public work and anonymous private activity, counted together.
+**14,529 lifetime contributions.** Public work and anonymous private activity, counted together.
 
 [Merged upstream (3)](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Amerged%20sort%3Aupdated-desc) · [Open PRs (8)](https://github.com/pulls?q=is%3Apr%20author%3Aprimerch%20is%3Apublic%20-user%3Aprimerch%20is%3Aopen%20sort%3Aupdated-desc) · [Full contribution history](https://github.com/primerch/primerch/blob/main/HISTORY.md)
 
@@ -19,9 +19,9 @@ Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/
 ## GitHub, in numbers
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-dark.svg?v=d219fe588c71">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=3cf4d6844706">
-  <img alt="GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=3cf4d6844706" width="400">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-dark.svg?v=12b9a1f26d27">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=c02ef04d2c08">
+  <img alt="GitHub Stats Extended: lifetime contributions including anonymous private work; public pull requests and merged PRs" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/stats-light.svg?v=c02ef04d2c08" width="400">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/extended/languages-dark.svg?v=5760d7895376">
@@ -32,11 +32,11 @@ Source stays private. Also on GitHub: [GESP Exam Assessment](https://github.com/
 Lifetime contributions include anonymous private activity. The language chart covers public source code.
 
 <picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg?v=2ddc60765a57">
-  <img alt="10,913 contributions over the past year, including 10,801 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg?v=66421e56cfa7" width="100%">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark-mobile.svg?v=d80541f673c3">
+  <img alt="10,927 contributions over the past year, including 10,815 anonymous private contributions" src="https://raw.githubusercontent.com/primerch/primerch/main/assets/brand/activity-dark.svg?v=f62880314761" width="100%">
 </picture>
 
-**10,913 contributions in the past year**, including **10,801 anonymous private contributions**. Private repository names, commits, and source code stay private.
+**10,927 contributions in the past year**, including **10,815 anonymous private contributions**. Private repository names, commits, and source code stay private.
 
 ## Accepted upstream
 
@@ -95,4 +95,4 @@ These PR totals count public upstream repositories. My own repositories and priv
 
 </details>
 
-<sub>Data refreshed 2026-11-27 · Latest PR activity: 2026-11-27 19:45 UTC+8 · [Hourly sync](https://github.com/primerch/primerch/actions/workflows/update-profile.yml)</sub>
+<sub>Data refreshed 2026-11-28 · Latest PR activity: 2026-11-27 19:45 UTC+8 · [Hourly sync](https://github.com/primerch/primerch/actions/workflows/update-profile.yml)</sub>
